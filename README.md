@@ -21,5 +21,5 @@ Topik halaman saya: daftar film yang pernah saya tonton.
 
 ## Catatan penggunaan AI
 
-Saya menggunakan AI untuk membantu memahami instruksi tugas. Isi film dan
+Saya menggunakan AI untuk membantu memahami instruksi tugas dan memeriksa kode. Isi film dan
 penyesuaian halaman saya kerjakan sendiri.

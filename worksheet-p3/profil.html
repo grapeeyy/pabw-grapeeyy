@@ -64,9 +64,38 @@
           <figcaption>koleksi poster film yang pernah saya tonton</figcaption>
         </figure>
       </section>
-      <section id="bagian-2">
-        <h2>Judul bagian kedua</h2>
-        <!-- form Anda nanti di sini (Lembar E) -->
+      <section id="tambah-film">
+        <h2>Tambah Film</h2>
+        <form action="/simpan" method="post">
+          <p>
+            <label for="Judul-film">Judul Film</label>
+            <input type="text" id="Judul-film" name="Judul-film" required />
+          </p>
+          <p>
+            <label for="tahun-film">Tahun</label>
+            <input
+              type="number"
+              id="tahun-film"
+              name="tahun-film"
+              min="1900"
+              max="2026"
+              required
+            />
+          </p>
+          <p>
+            <label for="rating-film">Rating</label>
+            <input
+              type="number"
+              id="rating-film"
+              name="rating-film"
+              step="0.1"
+              min="0"
+              max="10"
+              required
+            />
+          </p>
+          <button type="submit">Simpan</button>
+        </form>
       </section>
     </main>
 

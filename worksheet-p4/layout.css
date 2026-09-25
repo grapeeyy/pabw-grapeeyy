@@ -1,6 +1,5 @@
 header {
   padding-block: var(--space-4);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .header-baris {
@@ -12,36 +11,50 @@ header {
 
   max-width: 1100px;
   margin-inline: auto;
-  padding: var(--space-3) var(--space-4);
+  padding: var(--space-4) var(--space-6);
 
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
+
+  box-shadow: var(--shadow-1);
+}
+
+.header-baris h1 {
+  color: var(--color-primary);
 }
 
 nav ul {
   display: flex;
+  align-items: center;
   gap: var(--space-2);
+  flex-wrap: wrap;
+
   list-style: none;
   padding: 0;
-  flex-wrap: wrap;
 }
 
 nav a {
   display: inline-block;
+
   padding: var(--space-2) var(--space-3);
 
   color: var(--color-primary);
   text-decoration: none;
 
-  border-radius: var(--radius-md);
-  transition: 0.2s ease;
+  border-radius: var(--radius-full);
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 nav a:hover {
+  background: var(--lilac-300);
+  color: var(--lilac-900);
   text-decoration: none;
-  background: var(--color-primary);
-  color: var(--color-surface);
+
   transform: translateY(-1px);
 }
 
@@ -49,44 +62,36 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--section-gap);
-  padding-block: var(--space-6);
 
-  max-width: 1100px;
+  width: min(1100px, 100%);
   margin-inline: auto;
-  width: 100%;
+
+  padding-block: var(--space-6);
 }
 
-.katalog {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4);
-}
-
-.kartu {
-  flex: 1 1 16rem;
+main > section {
+  padding: var(--space-6);
 
   background: var(--color-surface);
+
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-1);
-  padding: var(--card-pad);
 
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  box-shadow: var(--shadow-1);
 }
 
-.kartu:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(139, 95, 191, 0.15);
+main h2 {
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
 }
 
 footer {
   max-width: 1100px;
   width: 100%;
-  margin: var(--space-6) auto 0;
 
+  margin: var(--space-6) auto 0;
   padding-block: var(--space-4);
+
   border-top: 1px solid var(--color-border);
 
   color: var(--color-fg);

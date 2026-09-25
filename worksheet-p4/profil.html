@@ -2,33 +2,54 @@
 <html lang="id">
   <head>
     <meta charset="utf-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Film yang Pernah Saya Tonton</title>
+
     <link rel="stylesheet" href="tokens.css" />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="komponen.css" />
     <link rel="stylesheet" href="tema.css" />
   </head>
+
   <body>
     <header>
-      <h1>Film yang Pernah Saya Tonton</h1>
-      <nav aria-label="Navigasi utama">
-        <ul>
-          <li><a href="#bagian-1">Daftar Film</a></li>
-          <li><a href="#bagian-2">Tambah Film</a></li>
-          <li><a href="#bagian-3">Tentang Saya</a></li>
-        </ul>
-      </nav>
+      <input type="checkbox" id="tema" class="pengalih-tema" />
+
+      <label for="tema" class="tombol-tema"> Tema gelap </label>
+
+      <div class="header-baris">
+        <h1>Film yang Pernah Saya Tonton</h1>
+
+        <nav aria-label="Navigasi utama">
+          <ul>
+            <li>
+              <a href="#daftar-film"> Daftar Film </a>
+            </li>
+
+            <li>
+              <a href="#tambah-film"> Tambah Film </a>
+            </li>
+
+            <li>
+              <a href="#tentang-saya"> Tentang Saya </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section id="daftar-film">
         <h2>Daftar Film</h2>
+
         <table>
           <caption>
             Daftar Film yang Pernah Saya Tonton
           </caption>
+
           <thead>
             <tr>
               <th scope="col">Judul Film</th>
@@ -37,82 +58,98 @@
               <th scope="col">Sutradara</th>
             </tr>
           </thead>
+
           <tbody>
             <tr>
               <th scope="row">Interstellar</th>
+
               <td>2014</td>
               <td>8.6</td>
               <td>Christopher Nolan</td>
             </tr>
+
             <tr>
               <th scope="row">Parasite</th>
+
               <td>2019</td>
               <td>8.6</td>
               <td>Bong Joon Ho</td>
             </tr>
+
             <tr>
               <th scope="row">Spider-Man: No Way Home</th>
+
               <td>2021</td>
               <td>8.2</td>
               <td>Jacob Kogan</td>
             </tr>
           </tbody>
         </table>
+
         <figure>
-          <a
-            href="https://www.imdb.com/title/tt0816692/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="interstellar.webp"
-              alt="Poster film Interstellar"
-              width="200"
-              height="300"
-              loading="lazy"
-            />
-          </a>
+          <div class="poster-film">
+            <a
+              href="https://www.imdb.com/title/tt0816692/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="interstellar.webp"
+                alt="Poster film Interstellar"
+                width="200"
+                height="300"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.imdb.com/title/tt6751668/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="parasite.webp"
+                alt="Poster film Parasite"
+                width="200"
+                height="300"
+                loading="lazy"
+              />
+            </a>
 
-          <a
-            href="https://www.imdb.com/title/tt6751668/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="parasite.webp"
-              alt="Poster film Parasite"
-              width="200"
-              height="300"
-              loading="lazy"
-            />
-          </a>
-
-          <a
-            href="https://www.imdb.com/title/tt10872600/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="koleksi-film.webp"
-              alt="Poster film Spider-Man: No Way Home"
-              width="200"
-              height="300"
-              loading="lazy"
-            />
-          </a>
+            <a
+              href="https://www.imdb.com/title/tt10872600/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="koleksi-film.webp"
+                alt="Poster film Spider-Man: No Way Home"
+                width="200"
+                height="300"
+                loading="lazy"
+              />
+            </a>
+          </div>
 
           <figcaption>Koleksi poster film yang pernah saya tonton</figcaption>
         </figure>
       </section>
+
       <section id="tambah-film">
         <h2>Tambah Film</h2>
+
         <form action="/simpan" method="post">
-          <p>
-            <label for="Judul-film">Judul Film</label>
-            <input type="text" id="Judul-film" name="Judul-film" required />
-          </p>
-          <p>
-            <label for="tahun-film">Tahun</label>
+          <!-- Judul film -->
+          <div class="form-kolom">
+            <label for="judul-film"> Judul Film </label>
+
+            <input type="text" id="judul-film" name="judul-film" required />
+
+            <p class="pesan-galat">Judul film wajib diisi.</p>
+          </div>
+
+          <div class="form-kolom">
+            <label for="tahun-film"> Tahun </label>
+
             <input
               type="number"
               id="tahun-film"
@@ -121,9 +158,12 @@
               max="2026"
               required
             />
-          </p>
-          <p>
-            <label for="rating-film">Rating</label>
+
+            <p class="pesan-galat">Masukkan tahun yang valid.</p>
+          </div>
+          <div class="form-kolom">
+            <label for="rating-film"> Rating </label>
+
             <input
               type="number"
               id="rating-film"
@@ -133,12 +173,30 @@
               max="10"
               required
             />
-          </p>
+
+            <p class="pesan-galat">
+              Rating harus berada di antara 0 sampai 10.
+            </p>
+          </div>
+
           <button type="submit">Simpan</button>
         </form>
       </section>
-    </main>
 
+      <section id="tentang-saya">
+        <h2>Tentang Saya</h2>
+
+        <p>
+          Saya adalah mahasiswa yang menyukai film dan senang mengumpulkan
+          daftar film yang sudah saya tonton.
+        </p>
+
+        <p>
+          Halaman ini dibuat untuk menampilkan koleksi film, informasi film, dan
+          poster film yang pernah saya tonton.
+        </p>
+      </section>
+    </main>
     <footer>
       <p>Arsya Amalia · 25523205 · 2026</p>
     </footer>

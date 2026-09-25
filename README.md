@@ -28,17 +28,21 @@ penyesuaian halaman saya kerjakan sendiri.
 
 - Berkas gaya yang akan dibuat: tokens.css, base.css,
   layout.css, komponen.css, tema.css
-- Warna utama: #1D3A8C (biru), dipilih karena ...
+- Warna utama: #8B5FBF (lilac), dipilih karena memberikan kesan lembut, modern,, dan nyaman dilihat pada halaman profil
 
 ### Token yang saya tetapkan
 
 | Token           | Nilai   | Untuk apa                  |
 | --------------- | ------- | -------------------------- |
-| --color-primary | #1D3A8C | tombol, tautan, penanda    |
-| --color-fg      | #0F172A | warna teks utama           |
-| --color-bg      | #F8FAFC | latar halaman              |
+| --color-primary | #8B5FBF | tombol, tautan, penanda    |
+| --color-fg      | #2D2438 | warna teks utama           |
+| --color-bg      | #FAF7FC | latar halaman              |
+| --color-surface | #FFFFFF | latar halaman              |
+| --color-border  | #D8CDE0 | latar halaman              |
+| --color-danger  | #B4234D | latar halaman              |
+| --color-focus   | #7C3AED | latar halaman              |
 | --radius-md     | 0.5rem  | sudut tombol dan kartu     |
 | --space-4       | 1rem    | jarak standar antar elemen |
 
-Kriteria selesai saya: mengubah --color-primary di satu baris
-harus mengubah warna tombol, tautan, judul, dan garis fokus.
+Kriteria selesai saya: mengubah --color-primary di satu baris pada --token.css
+harus dapat mengubah warna tombol, tautan, judul, dan garis fokus.

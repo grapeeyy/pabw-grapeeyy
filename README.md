@@ -23,3 +23,22 @@ Topik halaman saya: daftar film yang pernah saya tonton.
 
 Saya menggunakan AI untuk membantu memahami instruksi tugas. Isi film dan
 penyesuaian halaman saya kerjakan sendiri.
+
+## Pertemuan 4 — Design token halaman profil
+
+- Berkas gaya yang akan dibuat: tokens.css, base.css,
+  layout.css, komponen.css, tema.css
+- Warna utama: #1D3A8C (biru), dipilih karena ...
+
+### Token yang saya tetapkan
+
+| Token           | Nilai   | Untuk apa                  |
+| --------------- | ------- | -------------------------- |
+| --color-primary | #1D3A8C | tombol, tautan, penanda    |
+| --color-fg      | #0F172A | warna teks utama           |
+| --color-bg      | #F8FAFC | latar halaman              |
+| --radius-md     | 0.5rem  | sudut tombol dan kartu     |
+| --space-4       | 1rem    | jarak standar antar elemen |
+
+Kriteria selesai saya: mengubah --color-primary di satu baris
+harus mengubah warna tombol, tautan, judul, dan garis fokus.

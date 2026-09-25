@@ -30,11 +30,11 @@
 }
 
 :root {
+  --color-focus: var(--lilac-500);
   --color-bg: var(--cream-50);
   --color-fg: var(--gray-900);
   --color-surface: var(--white);
   --color-border: #e7ddf0;
-  --color-primary: var(--lilac-700);
   --color-danger: var(--rose-500);
   --color-focus: var(--lilac-500);
 

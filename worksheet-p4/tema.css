@@ -1,16 +1,19 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #0f172a;
-    --color-fg: #e2e8f0;
-    --color-surface: #1e293b;
-    --color-border: #334155;
+    --table-head-bg: var(--table-dark);
+    --table-head-fg: var(--table-dark-fg);
+    --color-hover: var(--hover-dark);
 
-    --color-primary: #b794f4;
+    --color-bg: var(--dark-bg);
+    --color-fg: var(--dark-fg);
+    --color-surface: var(--dark-surface);
+    --color-border: var(--dark-border);
 
-    --color-danger: #ff8a8a;
-    --color-focus: #ffc000;
+    --color-primary: var(--lilac-dark);
+    --color-danger: var(--danger-dark);
+    --color-focus: var(--focus-dark);
 
-    --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.45);
+    --shadow-1: var(--shadow-dark);
   }
 }
 
@@ -21,15 +24,18 @@
 }
 
 :root:has(#tema:checked) {
-  --color-bg: #0f172a;
-  --color-fg: #e2e8f0;
-  --color-surface: #1e293b;
-  --color-border: #334155;
+  --table-head-bg: var(--table-dark);
+  --table-head-fg: var(--table-dark-fg);
+  --color-hover: var(--hover-dark);
 
-  --color-primary: #b794f4;
+  --color-bg: var(--dark-bg);
+  --color-fg: var(--dark-fg);
+  --color-surface: var(--dark-surface);
+  --color-border: var(--dark-border);
 
-  --color-danger: #ff8a8a;
-  --color-focus: #ffc000;
+  --color-primary: var(--lilac-dark);
+  --color-danger: var(--danger-dark);
+  --color-focus: var(--focus-dark);
 
-  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.45);
+  --shadow-1: var(--shadow-dark);
 }

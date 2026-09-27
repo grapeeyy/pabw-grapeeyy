@@ -1,7 +1,7 @@
 :root {
   --lilac-900: #5b3a82;
   --lilac-700: #8b5fbf;
-  --lilac-500: #a78bfa;
+  --lilac-500: #6b3fa0;
   --lilac-300: #ddd6fe;
 
   --cream-50: #fbf9fe;
@@ -11,6 +11,20 @@
   --gray-500: #6f6478;
 
   --rose-500: #c2415a;
+
+  --dark-bg: #0f172a;
+  --dark-fg: #e2e8f0;
+  --dark-surface: #1e293b;
+  --dark-border: #64748b;
+
+  --lilac-dark: #b794f4;
+  --danger-dark: #ff8a8a;
+  --focus-dark: #ffc000;
+
+  --hover-light: #f8f3fc;
+  --table-dark: #3b2a55;
+  --table-dark-fg: #ede9fe;
+  --hover-dark: #273244;
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -22,6 +36,7 @@
   --radius-full: 999px;
 
   --shadow-1: 0 4px 14px rgba(91, 58, 130, 0.08);
+  --shadow-dark: 0 1px 3px rgba(0, 0, 0, 0.45);
 
   --text-sm: 0.875rem;
   --text-md: 1rem;
@@ -30,13 +45,17 @@
 }
 
 :root {
-  --color-focus: var(--lilac-500);
   --color-bg: var(--cream-50);
   --color-fg: var(--gray-900);
   --color-surface: var(--white);
-  --color-border: #e7ddf0;
+  --color-border: var(--lilac-500);
+  --color-primary: var(--lilac-700);
   --color-danger: var(--rose-500);
   --color-focus: var(--lilac-500);
+
+  --table-head-bg: var(--lilac-300);
+  --table-head-fg: var(--lilac-900);
+  --color-hover: var(--hover-light);
 
   --card-pad: var(--space-4);
   --section-gap: var(--space-6);

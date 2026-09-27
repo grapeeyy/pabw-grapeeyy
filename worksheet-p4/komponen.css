@@ -14,7 +14,7 @@ table {
 caption {
   padding: var(--space-3);
 
-  color: var(--gray-500);
+  color: var(--color-muted);
   font-size: var(--text-sm);
   font-style: italic;
 }
@@ -29,8 +29,8 @@ td {
 }
 
 thead th {
-  background: var(--lilac-300);
-  color: var(--lilac-900);
+  background: var(--table-head-bg);
+  color: var(--table-head-fg);
 }
 
 tbody tr:last-child th,
@@ -39,7 +39,7 @@ tbody tr:last-child td {
 }
 
 tbody tr:hover {
-  background: #f8f3fc;
+  background: var(--color-hover);
 }
 
 figure {
@@ -54,7 +54,6 @@ figure {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
   gap: var(--space-4);
 }
 
@@ -70,7 +69,6 @@ figure {
 
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-
   box-shadow: var(--shadow-1);
 
   transition:
@@ -80,13 +78,13 @@ figure {
 
 .poster-film img:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(91, 58, 130, 0.14);
+  box-shadow: var(--shadow-hover);
 }
 
 figcaption {
   text-align: center;
 
-  color: var(--gray-500);
+  color: var(--color-muted);
   font-size: var(--text-sm);
 }
 
@@ -158,7 +156,7 @@ button {
   border-radius: var(--radius-full);
 
   background: var(--color-primary);
-  color: var(--white);
+  color: var(--color-on-primary);
 
   cursor: pointer;
 
@@ -209,7 +207,7 @@ input:user-invalid {
 
 .tombol-tema:hover {
   background: var(--color-primary);
-  color: var(--white);
+  color: var(--color-on-primary);
 
   transform: translateY(-1px);
 }

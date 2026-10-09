@@ -63,3 +63,9 @@ const urut = [...daftarProyek].sort((a, b) => b.rating - a.rating);
 
 console.table(urut);
 console.table(daftarProyek);
+
+console.log(profil.alamat ?? "Alamat belum diisi");
+const nilaiInput = "10";
+
+console.log(nilaiInput + 1);
+console.log(Number(nilaiInput) + 1);

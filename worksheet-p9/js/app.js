@@ -28,7 +28,7 @@ console.log(formatKeahlian(profil.keahlian));
 globalThis.buatPerkenalan = buatPerkenalan;
 globalThis.formatKeahlian = formatKeahlian;
 
-const daftarProyek = [
+export const daftarProyek = [
   {
     judul: "Interstellar",
     tahun: 2014,

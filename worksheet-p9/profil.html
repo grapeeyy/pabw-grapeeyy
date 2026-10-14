@@ -44,7 +44,14 @@
     <main>
       <section id="daftar-film">
         <h2>Daftar Film</h2>
+        <div id="filter">
+          <button type="button" data-category="all">Semua</button>
+          <button type="button" data-category="Sci-Fi">Sci-Fi</button>
+          <button type="button" data-category="Thriller">Thriller</button>
+          <button type="button" data-category="Action">Action</button>
+        </div>
 
+        <p id="empty" hidden>Tidak ada film dalam kategori ini.</p>
         <table>
           <caption>
             Daftar Film yang Pernah Saya Tonton
@@ -114,7 +121,6 @@
         <h2>Tambah Film</h2>
 
         <form action="/simpan" method="post">
-          <!-- Judul film -->
           <div class="form-kolom">
             <label for="judul-film"> Judul Film </label>
 

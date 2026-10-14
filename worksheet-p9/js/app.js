@@ -34,18 +34,21 @@ export const daftarProyek = [
     tahun: 2014,
     rating: 8.6,
     sutradara: "Christopher Nolan",
+    kategori: "Sci-Fi",
   },
   {
     judul: "Parasite",
     tahun: 2019,
     rating: 8.6,
     sutradara: "Bong Joon Ho",
+    kategori: "Thriller",
   },
   {
     judul: "Spider-Man: No Way Home",
     tahun: 2021,
     rating: 8.2,
     sutradara: "Jacob Kogan",
+    kategori: "Action",
   },
 ];
 

@@ -120,13 +120,13 @@
       <section id="tambah-film">
         <h2>Tambah Film</h2>
 
-        <form action="/simpan" method="post">
+        <form action="/simpan" method="post" novalidate>
           <div class="form-kolom">
             <label for="judul-film"> Judul Film </label>
 
             <input type="text" id="judul-film" name="judul-film" required />
 
-            <p class="pesan-galat">Judul film wajib diisi.</p>
+            <p class="pesan-galat" hidden>Judul film wajib diisi.</p>
           </div>
 
           <div class="form-kolom">
@@ -141,7 +141,7 @@
               required
             />
 
-            <p class="pesan-galat">Masukkan tahun yang valid.</p>
+            <p class="pesan-galat" hidden>Masukkan tahun yang valid.</p>
           </div>
           <div class="form-kolom">
             <label for="rating-film"> Rating </label>
@@ -156,9 +156,19 @@
               required
             />
 
-            <p class="pesan-galat">
+            <p class="pesan-galat" hidden>
               Rating harus berada di antara 0 sampai 10.
             </p>
+          </div>
+
+          <div class="form-kolom">
+            <label for="kategori-film">Kategori</label>
+            <select id="kategori-film" name="kategori-film" required>
+              <option value="">Pilih kategori</option>
+              <option value="Sci-Fi">Sci-Fi</option>
+              <option value="Thriller">Thriller</option>
+              <option value="Action">Action</option>
+            </select>
           </div>
 
           <button type="submit">Simpan</button>

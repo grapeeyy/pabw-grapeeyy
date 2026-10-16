@@ -1,0 +1,41 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --table-head-bg: var(--table-dark);
+    --table-head-fg: var(--table-dark-fg);
+    --color-hover: var(--hover-dark);
+
+    --color-bg: var(--dark-bg);
+    --color-fg: var(--dark-fg);
+    --color-surface: var(--dark-surface);
+    --color-border: var(--dark-border);
+
+    --color-primary: var(--lilac-dark);
+    --color-danger: var(--danger-dark);
+    --color-focus: var(--focus-dark);
+
+    --shadow-1: var(--shadow-dark);
+  }
+}
+
+.pengalih-tema {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+:root:has(#tema:checked) {
+  --table-head-bg: var(--table-dark);
+  --table-head-fg: var(--table-dark-fg);
+  --color-hover: var(--hover-dark);
+
+  --color-bg: var(--dark-bg);
+  --color-fg: var(--dark-fg);
+  --color-surface: var(--dark-surface);
+  --color-border: var(--dark-border);
+
+  --color-primary: var(--lilac-dark);
+  --color-danger: var(--danger-dark);
+  --color-focus: var(--focus-dark);
+
+  --shadow-1: var(--shadow-dark);
+}

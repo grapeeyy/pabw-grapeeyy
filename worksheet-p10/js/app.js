@@ -74,6 +74,13 @@ const nilaiInput = "10";
 console.log(nilaiInput + 1);
 console.log(Number(nilaiInput) + 1);
 
-fetchNews()
-  .then((data) => console.log("Data API:", data))
-  .catch((error) => console.error(error.message));
+async function tampilkanBerita() {
+  try {
+    const data = await fetchNews();
+    console.log("Data API:", data);
+  } catch (error) {
+    console.error("Gagal menampilkan data:", error.message);
+  }
+}
+
+tampilkanBerita();

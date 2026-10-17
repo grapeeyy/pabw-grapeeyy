@@ -74,12 +74,42 @@ const nilaiInput = "10";
 console.log(nilaiInput + 1);
 console.log(Number(nilaiInput) + 1);
 
+const containerAPI = document.querySelector("#list");
+const statusAPI = document.querySelector("#api-status");
+
+function render(list) {
+  containerAPI.textContent = "";
+
+  if (list.length === 0) {
+    statusAPI.textContent = "Belum ada data.";
+    return;
+  }
+
+  statusAPI.textContent = "";
+
+  list.forEach(function (n) {
+    const card = document.createElement("article");
+    const heading = document.createElement("h3");
+    const body = document.createElement("p");
+
+    heading.textContent = n.title;
+    body.textContent = n.body;
+
+    card.appendChild(heading);
+    card.appendChild(body);
+    containerAPI.appendChild(card);
+  });
+}
+globalThis.render = render;
 async function tampilkanBerita() {
+  statusAPI.textContent = "Memuat data...";
+
   try {
     const data = await fetchNews();
-    console.log("Data API:", data);
+    render(data);
   } catch (error) {
-    console.error("Gagal menampilkan data:", error.message);
+    containerAPI.textContent = "";
+    statusAPI.textContent = "Gagal memuat data: " + error.message;
   }
 }
 
